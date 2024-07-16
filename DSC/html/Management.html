@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 定义文档类型和语言 -->
+    <meta charset="UTF-8" />
+    <!-- 设定页面在不同设备上的视口大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 页面描述信息 -->
+    <meta
+      name="description"
+      content="数字智慧社区 - 探索和学习数字化时代的智慧和技能。"
+    />
+    <!-- 页面关键词 -->
+    <meta
+      name="keywords"
+      content="数字智慧社区,DSC,数字智慧,智慧社区,数字社区"
+    />
+    <!-- 页面标题 -->
+    <title>数字智慧社区-探索科技创新与数字化生活</title>
+    <!-- 设置页面图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入Bootstrap图标CSS文件 -->
+    <link rel="stylesheet" href="../bootstrap/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/management.css" />
+  </head>
+
+  <body>
+    <!-- nav S -->
+    <nav id="nav" class="over">
+      <div class="w nav-wrap">
+        <a class="nav-logo" href="../html/Home.html">
+          <img src="../images/logo.png" alt="logo.png" />
+          <br />
+          数字智慧社区
+        </a>
+        <button class="nav-toggler-btn" type="button" id="navTogglerBtn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="nav-content" id="navCollapse">
+          <ul class="nav-content-bar">
+            <li class="nav-item">
+              <a class="nav-link" href="./Home.html" aria-current="page"
+                >首页</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Management.html">社区运营</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Operations.html">社区管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./CServer.html">社区服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Information.html">社区资讯</a>
+            </li>
+          </ul>
+          <div class="nav-dropdown" id="navUser">
+            <button class="nav-dropdown-btn" type="button" id="triggerLogin">
+              您好，请登录
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="triggerLogin">
+              <a class="dropdown-item" href="../html/login.html">登录/注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav E -->
+
+    <!-- 主要内容区域开始 -->
+    <main id="main-content" class="py-5">
+      <!-- 管理员仪表板 -->
+      <section id="dashboard" class="my-5 py-5">
+        <div class="w">
+          <h2 class="text-center mb-5">运营管理仪表板</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card bg-primary text-white shadow">
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h8 class="card-title mb-0">今日访问量</h8>
+                    <p class="mb-0">2,350</p>
+                  </div>
+                  <i class="bi bi-eye-fill fs-1"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-success text-white shadow">
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h8 class="card-title mb-0">新用户注册</h8>
+                    <p class="mb-0">54</p>
+                  </div>
+                  <i class="bi bi-person-plus-fill fs-1"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-warning text-dark shadow">
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h8 class="card-title mb-0">待处理反馈</h8>
+                    <p class="mb-0">17</p>
+                  </div>
+                  <i class="bi bi-exclamation-circle-fill fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 活动管理 -->
+      <section id="Activity">
+        <div class="w">
+          <h2 class="text-center mb-5">活动管理</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">活动名称</th>
+                <th scope="col">开始时间</th>
+                <th scope="col">地点</th>
+                <th scope="col">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>社区环保公益跑</td>
+                <td>2023-05-15 09:00 AM</td>
+                <td>社区公园</td>
+                <td>
+                  <button class="btn btn-sm btn-secondary" id="editActivity">
+                    编辑
+                  </button>
+                  <button class="btn btn-sm btn-danger" id="delActivity">
+                    删除
+                  </button>
+                </td>
+              </tr>
+              <!-- 更多活动条目... -->
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary fr" id="newActivity">添加新活动</a>
+        </div>
+      </section>
+
+      <!-- 参与者列表 -->
+      <section id="participants" class="my-5 py-5">
+        <div class="w">
+          <h2 class="text-center mb-5">活动参与者列表</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">姓名</th>
+                <th scope="col">报名活动</th>
+                <th scope="col">联系方式</th>
+                <th scope="col">确认状态</th>
+                <th scope="col">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>李四</td>
+                <td>社区环保公益跑</td>
+                <td>13912345678</td>
+                <td><span class="badge bg-success">已确认</span></td>
+                <td>
+                  <button class="btn btn-sm btn-secondary">详情</button>
+                </td>
+              </tr>
+              <!-- 更多参与者条目... -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!-- 主要内容区域结束 -->
+
+    <!-- 返回顶部按钮 -->
+    <!-- backTop S -->
+    <a id="backTop" href="#top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <!-- backTop E -->
+
+    <!-- 页面JavaScript脚本引用 -->
+    <!-- script -->
+    <script src="../js/common.js"></script>
+  </body>
+</html>

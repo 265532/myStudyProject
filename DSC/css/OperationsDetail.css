@@ -1,0 +1,280 @@
+body {
+  padding-top: 60px;
+}
+/* main */
+#activity-management .management-title {
+  font-size: 1.25rem;
+}
+/* 社区活动管理导航栏 */
+#activity-management .navbar {
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px 15px;
+  margin: 20px 0;
+}
+
+#activity-management h1 {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+#activity-management .nav-content-bar {
+  margin-left: 20px;
+}
+#activity-management .nav-link {
+  color: #666;
+  padding: 20px;
+  transition: var(--transition);
+}
+#activity-management .nav-link:hover {
+  color: #000;
+}
+
+/* 主体内容区域 */
+#left-menu {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+#rightContent {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 20px;
+}
+
+#activity-management-main h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.list-group {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-decoration: none;
+  color: #000;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* 表格 */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+.table td:last-child {
+  text-align: right;
+}
+
+.table th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table .btn {
+  color: #fff;
+  font-size: 12px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+/* 管理员操作面板样式 */
+#admin-dashboard h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.custom-mb-5 {
+  margin-bottom: 3rem; /* 替换mb-5的底部外边距 */
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.custom-d-grid {
+  display: grid;
+}
+.custom-btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.custom-btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.custom-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.custom-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.custom-card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.custom-card-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+}
+
+.custom-card-text {
+  margin-bottom: 15px;
+}
+
+.custom-badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.custom-badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.custom-badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.custom-badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+/* 平板 */
+@media (max-width: 768px) {
+  #navCollapse {
+    justify-content: flex-end;
+    flex-direction: row;
+    flex: 1;
+    height: auto;
+  }
+  #activity-management .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #activity-management .management-nav-content {
+    min-width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  #activity-management .nav-content-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  #activity-management .nav-content-bar .nav-link {
+    display: block;
+    padding: 10px 0;
+  }
+  #activity-management .nav-content-bar {
+    margin-left: 0;
+  }
+  #activity-management .management-nav-content.show {
+    height: 8rem;
+  }
+}
+/* 手机 */
+@media (max-width: 480px) {
+  .table th,
+  .table td {
+    font-size: 14px;
+  }
+  #leftMenu,
+  #rightContent {
+    padding: 0 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .custom-card {
+    margin-top: 20px;
+  }
+}

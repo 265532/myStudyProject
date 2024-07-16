@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 定义文档类型和语言 -->
+    <meta charset="UTF-8" />
+    <!-- 设定页面在不同设备上的视口大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 页面描述信息 -->
+    <meta
+      name="description"
+      content="数字智慧社区 - 探索和学习数字化时代的智慧和技能。"
+    />
+    <!-- 页面关键词 -->
+    <meta
+      name="keywords"
+      content="数字智慧社区,DSC,数字智慧,智慧社区,数字社区"
+    />
+    <!-- 页面标题 -->
+    <title>数字智慧社区-探索科技创新与数字化生活</title>
+    <!-- 设置页面图标 -->
+    <!-- css common.css在bootstrap.min.css中引用 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入Bootstrap的CSS文件 -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 引入Bootstrap图标CSS文件 -->
+    <link rel="stylesheet" href="../bootstrap/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/CServer.css" />
+  </head>
+
+  <body>
+    <!-- nav S -->
+    <nav id="nav" class="over">
+      <div class="w nav-wrap">
+        <a class="nav-logo" href="../html/Home.html">
+          <img src="../images/logo.png" alt="logo.png" />
+          <br />
+          数字智慧社区
+        </a>
+        <button class="nav-toggler-btn" type="button" id="navTogglerBtn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="nav-content" id="navCollapse">
+          <ul class="nav-content-bar">
+            <li class="nav-item">
+              <a class="nav-link" href="./Home.html" aria-current="page"
+                >首页</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Management.html">社区运营</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Operations.html">社区管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./CServer.html">社区服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Information.html">社区资讯</a>
+            </li>
+          </ul>
+          <div class="nav-dropdown" id="navUser">
+            <button class="nav-dropdown-btn" type="button" id="triggerLogin">
+              您好，请登录
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="triggerLogin">
+              <a class="dropdown-item" href="../html/login.html">登录/注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav E -->
+
+    <!-- 主要内容区域开始 -->
+    <main class="w">
+      <!-- 简介区域 -->
+      <section id="introduction" class="my-5 py-5">
+        <div class="row align-items-center">
+          <div class="introduction-item introduction-img">
+            <img src="../images/C-management.jpg" alt="社区管理概念图" />
+          </div>
+          <div class="introduction-item">
+            <h2 style="font-size: 2rem">欢迎来到数字智慧社区管理中心</h2>
+            <p class="lead">
+              在这里，我们致力于为社区居民提供一站式便利服务，从日常家政到专业维修，再到健康管理，我们的目标是让您的生活更加安心、便捷。选择您所需的服务类别，享受高品质的生活体验。
+            </p>
+            <a
+              href="#serviceContent"
+              class="btn btn-primary"
+              id="startOperations"
+              >探索服务</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 服务分类导航 -->
+      <div class="mb-4">
+        <h2 class="mb-3">服务分类</h2>
+        <ul class="custom-nav-tabs" id="serviceTabs" role="tablist">
+          <li class="nav-item active" role="presentation">
+            <button
+              class="nav-link"
+              data-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              家政服务
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              维修服务
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-target="#contact"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              健康咨询
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 服务内容展示 -->
+      <div class="tab-content" id="serviceContent">
+        <div
+          class="tab-pane active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <h3>家政服务</h3>
+          <p>提供专业的清洁、烹饪、保姆等家政服务，让您的生活更加舒适便捷。</p>
+          <!-- 表单 -->
+          <form>
+            <div class="row custom-row row mt-4">
+              <div class="custom-col-md-6 col-sm-12 col-sm-12">
+                <label for="serviceName" class="custom-form-label"
+                  >服务类型</label
+                >
+                <select id="serviceName" class="custom-form-select">
+                  <option value="">请选择服务类型</option>
+                  <option value="清洁">清洁服务</option>
+                  <option value="烹饪">烹饪服务</option>
+                  <option value="保姆">保姆服务</option>
+                </select>
+              </div>
+              <div class="custom-col-md-6 col-sm-12 col-sm-12">
+                <label for="serviceDate" class="custom-form-label"
+                  >预约日期</label
+                >
+                <input
+                  type="date"
+                  class="custom-form-control"
+                  id="serviceDate"
+                  required
+                />
+              </div>
+              <div class="custom-col-md-6 col-sm-12 col-sm-12">
+                <label for="startTime" class="custom-form-label"
+                  >开始时间</label
+                >
+                <input
+                  type="time"
+                  class="custom-form-control"
+                  id="startTime"
+                  required
+                />
+              </div>
+              <div class="custom-col-md-6 col-sm-12 col-sm-12">
+                <label for="endTime" class="custom-form-label">结束时间</label>
+                <input
+                  type="time"
+                  class="custom-form-control"
+                  id="endTime"
+                  required
+                />
+              </div>
+              <div class="custom-col-md-12 col-sm-12">
+                <label for="contactInfo" class="custom-form-label"
+                  >联系方式</label
+                >
+                <input
+                  type="tel"
+                  class="custom-form-control"
+                  id="contactInfo"
+                  placeholder="手机号码"
+                  pattern="[0-9]{11}"
+                  required
+                />
+              </div>
+              <div class="custom-col-md-12 col-sm-12" style="text-align: right">
+                <button type="submit" class="custom-submit btn btn-primary">
+                  提交预约
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- 维修服务 -->
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <h3>维修服务</h3>
+          <p>
+            涵盖水电维修、家电维修等，专业师傅上门服务，解决您的居家维修烦恼。
+          </p>
+          <!-- 表单 -->
+          <form>
+            <div class="custom-row row gy-3">
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="repairType" class="custom-form-label"
+                  >维修类型</label
+                >
+                <select id="repairType" class="custom-form-select">
+                  <option value="">请选择维修类型</option>
+                  <option value="水电">水电维修</option>
+                  <option value="家电">家电维修</option>
+                  <option value="管道">管道维修</option>
+                  <option value="其它">其他维修</option>
+                </select>
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="repairDescription" class="custom-form-label"
+                  >问题描述</label
+                >
+                <textarea
+                  class="custom-form-control"
+                  id="repairDescription"
+                  rows="3"
+                  placeholder="请详细描述您的维修需求"
+                ></textarea>
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="preferredDate" class="custom-form-label"
+                  >期望服务日期</label
+                >
+                <input
+                  type="date"
+                  class="custom-form-control"
+                  id="preferredDate"
+                />
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="contactPhone" class="custom-form-label"
+                  >联系电话</label
+                >
+                <input
+                  type="tel"
+                  class="custom-form-control"
+                  id="contactPhone"
+                  placeholder="请输入您的联系电话"
+                />
+              </div>
+              <div class="custom-col-md-12 col-sm-12" style="text-align: right">
+                <button type="submit" class="btn btn-primary">提交预约</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- 健康咨询 -->
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          <h3>健康咨询</h3>
+          <p>在线医生咨询，提供健康建议，包括心理健康、营养指导等服务。</p>
+          <!-- 表单 -->
+          <form>
+            <div class="custom-row row gy-3">
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="healthService" class="custom-form-label"
+                  >咨询类型</label
+                >
+                <select id="healthService" class="custom-form-select">
+                  <option value="">请选择咨询类型</option>
+                  <option value="心理健康">心理健康</option>
+                  <option value="营养咨询">营养咨询</option>
+                  <option value="疾病预防">疾病预防</option>
+                  <option value="运动管理">运动与体重管理</option>
+                </select>
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="healthIssue" class="custom-form-label"
+                  >咨询问题</label
+                >
+                <textarea
+                  class="custom-form-control"
+                  id="healthIssue"
+                  rows="3"
+                  placeholder="请简要描述您的健康问题或咨询需求"
+                ></textarea>
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="consultationDate" class="custom-form-label"
+                  >期望咨询日期</label
+                >
+                <input
+                  type="date"
+                  class="custom-form-control"
+                  id="consultationDate"
+                />
+              </div>
+              <div class="custom-col-md-6 col-sm-12">
+                <label for="clientEmail" class="custom-form-label"
+                  >电子邮箱</label
+                >
+                <input
+                  type="email"
+                  class="custom-form-control"
+                  id="clientEmail"
+                  placeholder="请留下您的电子邮箱以便我们与您联系"
+                />
+              </div>
+              <div class="custom-col-md-12 col-sm-12" style="text-align: right">
+                <button type="submit" class="btn btn-primary">提交预约</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- 服务评价区域 -->
+      <section class="my-5">
+        <h2>服务评价</h2>
+        <div class="custom-card-group row">
+          <div class="custom-card">
+            <img
+              src="../images/avatar.png"
+              class="custom-card-img-top"
+              style="width: 60px; height: 60px"
+              alt="客户头像"
+            />
+            <div class="custom-card-body">
+              <h5 class="custom-card-title">张女士</h5>
+              <p class="custom-card-text">
+                家政服务非常到位，工作人员细心负责，家里打扫得焕然一新。
+              </p>
+              <p class="custom-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </p>
+            </div>
+          </div>
+          <div class="custom-card">
+            <img
+              src="../images/avatar.png"
+              class="custom-card-img-top"
+              style="width: 60px; height: 60px"
+              alt="客户头像"
+            />
+            <div class="custom-card-body">
+              <h5 class="custom-card-title">王女士</h5>
+              <p class="custom-card-text">
+                家政服务非常到位，工作人员细心负责，家里打扫得焕然一新。
+              </p>
+              <p class="custom-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </p>
+            </div>
+          </div>
+          <div class="custom-card">
+            <img
+              src="../images/avatar.png"
+              class="custom-card-img-top"
+              style="width: 60px; height: 60px"
+              alt="客户头像"
+            />
+            <div class="custom-card-body">
+              <h5 class="custom-card-title">李女士</h5>
+              <p class="custom-card-text">
+                家政服务非常到位，工作人员细心负责，家里打扫得焕然一新。
+              </p>
+              <p class="custom-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </p>
+            </div>
+          </div>
+          <div class="custom-card">
+            <img
+              src="../images/avatar.png"
+              class="custom-card-img-top"
+              style="width: 60px; height: 60px"
+              alt="客户头像"
+            />
+            <div class="custom-card-body">
+              <h5 class="custom-card-title">张先生</h5>
+              <p class="custom-card-text">
+                家政服务非常到位，工作人员细心负责，家里打扫得焕然一新。
+              </p>
+              <p class="custom-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 主要内容区域结束 -->
+
+    <!-- 返回顶部按钮 -->
+    <!-- backTop S -->
+    <a id="backTop" href="#top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <!-- backTop E -->
+
+    <!-- 页面JavaScript脚本引用 -->
+    <!-- script -->
+    <script src="../js/common.js"></script>
+    <script src="../js/Cserver.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    /* 设置页面宽度为100% */
+    height: 100vh;
+    /* 设置页面高度为视口高度 */
+    background: url(../images/header-bg.jpg) no-repeat;
+    /* 使用header-bg.jpg作为背景，不重复 */
+    background-size: cover;
+    /* 背景图像铺满整个背景区域 */
+}
+
+/* 导航栏样式开始 */
+#nav .navbar-brand {
+    font-size: 32px;
+    /* 导航栏品牌字体大小为32像素 */
+}
+
+/* 导航栏样式结束 */
+
+/* 表单卡片样式开始 */
+.formCard {
+    position: absolute;
+    /* 绝对定位 */
+    top: 50%;
+    /* 距离顶部50%处 */
+    right: 5%;
+    /* 距离右侧5%处 */
+    transform: translate(0, -50%);
+    /* 使用transform属性将元素向上平移50%自身高度 */
+    width: 30vw;
+    /* 宽度为视口宽度的30% */
+    height: auto;
+    /* 高度为视口高度的85% */
+    background: rgba(255, 2552, 255, .9);
+    /* 背景颜色为白色的半透明效果 */
+    border-radius: 10px;
+    /* 圆角半径为10像素 */
+    padding: 20px;
+    /* 内边距为20像素 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* 添加黑色0.3透明度的10像素模糊阴影 */
+}
+
+/* 表单卡片样式结束 */
+
+@media screen and (max-width: 768px) {
+    .formCard {
+        width: 90%;
+        /* 在屏幕宽度小于或等于768像素时，设置表单卡片宽度为视口宽度的90% */
+        height: 70vh;
+        /* 在屏幕宽度小于或等于768像素时，设置表单卡片高度为视口高度的70% */
+    }
+
+    .login-form {
+        height: 70%;
+        /* 在屏幕宽度小于或等于768像素时，设置登录表单高度为父容器高度的70% */
+        overflow: scroll;
+        /* 在屏幕宽度小于或等于768像素时，如果内容溢出，显示滚动条 */
+    }
+
+    .login-form::-webkit-scrollbar {
+        display: none;
+        /* 在屏幕宽度小于或等于768像素时，隐藏Webkit浏览器的滚动条 */
+    }
+}

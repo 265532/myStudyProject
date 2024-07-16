@@ -1,0 +1,64 @@
+/* 简介 */
+.introduction-img {
+  text-align: right;
+  padding: 0 30px;
+}
+.introduction-img img {
+  border-radius: 15px;
+  width: 100%;
+}
+p.lead {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #6c757d;
+  margin: 1.5rem 0;
+}
+#introduction .row {
+  flex-direction: row-reverse;
+}
+
+/* 特色 */
+.text-center {
+  text-align: center;
+}
+
+.card {
+  transition: var(--transition);
+}
+.card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card-text {
+  color: #555;
+  font-size: 1rem;
+}
+.text-primary {
+  color: #007bff;
+}
+.fs-1 {
+  font-size: 2.5rem;
+}
+/* 平板 */
+@media (max-width: 768px) {
+  #introduction .row {
+    flex-direction: row;
+  }
+  #introduction .introduction-item {
+    text-align: center;
+    min-width: 100%;
+  }
+  #introduction #startOperations {
+    float: none;
+  }
+}
+/* 手机 */
+@media (max-width: 480px) {
+}

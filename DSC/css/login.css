@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    /* 设置页面宽度为100% */
+    height: 100vh;
+    /* 设置页面高度为视口高度 */
+    background: url(../images/header-bg.jpg) no-repeat;
+    /* 使用header-bg.jpg作为背景，不重复 */
+    background-size: cover;
+    /* 背景图像铺满整个背景区域 */
+}
+
+/* 表单卡片样式开始 */
+.formCard {
+    top: 50%;
+    /* 相对于父元素顶部50%处定位 */
+    left: 50%;
+    /* 相对于父元素左侧50%处定位 */
+    transform: translate(-50%, -50%);
+    /* 使用transform属性将元素向左和向上各平移50%自身宽度和高度 */
+    height: auto;
+    /* 高度为视口高度的40% */
+}
+
+/* 表单卡片样式结束 */

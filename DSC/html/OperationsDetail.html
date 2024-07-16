@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 定义文档类型和语言 -->
+    <meta charset="UTF-8" />
+    <!-- 设定页面在不同设备上的视口大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 页面描述信息 -->
+    <meta
+      name="description"
+      content="数字智慧社区 - 探索和学习数字化时代的智慧和技能。"
+    />
+    <!-- 页面关键词 -->
+    <meta
+      name="keywords"
+      content="数字智慧社区,DSC,数字智慧,智慧社区,数字社区"
+    />
+    <!-- 页面标题 -->
+    <title>数字智慧社区-探索科技创新与数字化生活</title>
+    <!-- 设置页面图标 -->
+    <!-- css common.css在bootstrap.min.css中引用 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 引入Bootstrap图标CSS文件 -->
+    <link rel="stylesheet" href="../bootstrap/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/OperationsDetail.css" />
+  </head>
+
+  <body>
+    <!-- nav S -->
+    <nav id="nav" class="over">
+      <div class="w nav-wrap">
+        <a class="nav-logo" href="../html/Home.html">
+          <img src="../images/logo.png" alt="logo.png" />
+          <br />
+          数字智慧社区
+        </a>
+        <div
+          class="nav-content"
+          style="justify-content: flex-end"
+          id="navCollapse"
+        >
+          <div class="nav-dropdown" id="navUser">
+            <button class="nav-dropdown-btn" type="button" id="triggerLogin">
+              您好，请登录
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="triggerLogin">
+              <a class="dropdown-item" href="../html/login.html">登录/注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav E -->
+
+    <!-- main content S -->
+    <main id="main-content">
+      <!-- 社区活动管理部分开始 -->
+      <section id="activity-management" class="my-5 py-5">
+        <div class="w">
+          <h1 style="font-size: 2.5rem">数字智慧社区管理系统</h1>
+
+          <!-- 社区活动管理导航栏 S -->
+          <nav class="navbar" id="activity-management-nav">
+            <a class="management-title"> 社区管理 </a>
+            <button
+              class="nav-toggler-btn"
+              type="button"
+              id="activityNavTogglerBtn"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+            <div class="management-nav-content show" id="managementNavContent">
+              <ul class="nav-content-bar">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;">居民信息管理</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;">公告发布</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;">设施维护</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- 主体内容区域 -->
+          <div class="row" id="activity-management-main">
+            <!-- 左侧菜单 -->
+            <div id="leftMenu">
+              <div class="list-group">
+                <a href="#" class="list-group-item active"> 居民列表 </a>
+                <a href="#" class="list-group-item">新增居民</a>
+                <a href="#" class="list-group-item">公告管理</a>
+                <a href="#" class="list-group-item">活动日历</a>
+                <a href="#" class="list-group-item">维修记录</a>
+              </div>
+            </div>
+            <!-- 右侧内容 -->
+            <div id="rightContent">
+              <h2>居民信息管理</h2>
+              <!-- 表格 -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">姓名</th>
+                    <th scope="col">住址</th>
+                    <th scope="col">联系方式</th>
+                    <th scope="col">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>1号楼101室</td>
+                    <td>13800138000</td>
+                    <td>
+                      <button class="btn btn-primary">编辑</button>
+                      <button class="btn btn-danger">删除</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 社区活动管理部分结束 -->
+
+      <!-- 管理员操作面板 -->
+      <section id="admin-dashboard" style="padding-bottom: 80px">
+        <div class="w">
+          <h2 class="text-center">管理员操作面板</h2>
+          <div class="custom-row">
+            <div class="custom-col-md-6">
+              <!-- 快速操作按钮 -->
+              <div class="custom-d-grid">
+                <button
+                  class="btn custom-btn custom-btn-primary custom-btn-lg"
+                  type="button"
+                >
+                  发布社区新闻
+                </button>
+                <button
+                  class="btn custom-btn custom-btn-secondary custom-btn-lg"
+                  type="button"
+                >
+                  查看最近反馈
+                </button>
+              </div>
+            </div>
+            <div class="custom-col-md-6">
+              <!-- 关键统计数据  -->
+              <div class="custom-card custom-shadow">
+                <div class="custom-card-body">
+                  <h5 class="custom-card-title">社区概况</h5>
+                  <p class="custom-card-text">
+                    居民总数：<span class="custom-badge custom-badge-primary"
+                      >1234</span
+                    >
+                  </p>
+                  <p class="custom-card-text">
+                    今日访问量：<span class="custom-badge custom-badge-info"
+                      >567</span
+                    >
+                  </p>
+                  <p class="custom-card-text">
+                    未处理反馈：<span class="custom-badge custom-badge-warning"
+                      >25</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main content E -->
+
+    <!-- 返回顶部按钮 -->
+    <!-- backTop S -->
+    <a id="backTop" href="#top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <!-- backTop E -->
+
+    <!-- script -->
+     <script src="../js/common.js"></script>
+    <script>
+      document
+        .querySelector("#activityNavTogglerBtn")
+        .addEventListener("click", function () {
+          document
+            .querySelector("#managementNavContent")
+            .classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

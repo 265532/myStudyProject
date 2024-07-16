@@ -1,0 +1,111 @@
+body {
+  padding-top: 50px;
+}
+/* 资讯详情内容样式 */
+.detail-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-main {
+  flex: 3;
+  margin-right: 20px;
+}
+.detail-main p {
+  font-size: 18px;
+}
+
+.detail-sidebar {
+  flex: 1;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail-content .text-muted {
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-unstyled li {
+  margin: 5px 0;
+}
+
+aside h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+aside ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+/* 评论区样式 */
+.comment-section {
+  padding: 0 15px;
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.comment-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-info {
+  margin-left: 10px;
+}
+
+.comment-text p {
+  margin-top: 10px;
+}
+
+.comment-text p:first-child {
+  margin-top: 0;
+}
+/* 平板 */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+  .detail-content {
+    flex-wrap: wrap;
+  }
+  .detail-content .detail-main {
+    min-width: 100%;
+  }
+  .detail-content .detail-sidebar {
+    margin-top: 25px;
+  }
+}
+/* 手机 */
+@media (max-width: 480px) {
+}

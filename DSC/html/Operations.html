@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="数字智慧社区 - 探索和学习数字化时代的智慧和技能。"
+    />
+    <meta
+      name="keywords"
+      content="数字智慧社区,DSC,数字智慧,智慧社区,数字社区"
+    />
+    <title>数字智慧社区-探索科技创新与数字化生活</title>
+
+    <!-- css common.css在bootstrap.min.css中引用 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/Operations.css" />
+    <link rel="stylesheet" href="../bootstrap/font/bootstrap-icons.css" />
+  </head>
+
+  <body>
+    <!-- nav S -->
+    <nav id="nav" class="over">
+      <div class="w nav-wrap">
+        <a class="nav-logo" href="../html/Home.html">
+          <img src="../images/logo.png" alt="logo.png" />
+          <br />
+          数字智慧社区
+        </a>
+        <button class="nav-toggler-btn" type="button" id="navTogglerBtn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="nav-content" id="navCollapse">
+          <ul class="nav-content-bar">
+            <li class="nav-item">
+              <a class="nav-link" href="./Home.html" aria-current="page"
+                >首页</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Management.html">社区运营</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Operations.html">社区管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./CServer.html">社区服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Information.html">社区资讯</a>
+            </li>
+          </ul>
+          <div class="nav-dropdown" id="navUser">
+            <button class="nav-dropdown-btn" type="button" id="triggerLogin">
+              您好，请登录
+            </button>
+            <div class="nav-dropdown-menu" aria-labelledby="triggerLogin">
+              <a class="dropdown-item" href="../html/login.html">登录/注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav E -->
+
+    <!-- main content S -->
+    <main id="main-content" class="py-5">
+      <!-- 简介区域 -->
+      <section id="introduction" class="my-5 py-5">
+        <div class="w">
+          <div class="row align-items-center">
+            <div class="introduction-item introduction-img">
+              <img src="../images/C-management.jpg" alt="社区管理概念图" />
+            </div>
+            <div class="introduction-item">
+              <h2 class="fw-bold mb-4 mt-4">欢迎来到数字智慧社区管理中心</h2>
+              <p class="lead">
+                在这里，您可以高效地管理社区动态，促进邻里交流，提升社区服务体验。无论是发布最新资讯，还是管理用户反馈，一切尽在掌握之中。
+              </p>
+              <a
+                href="../html/OperationsDetail.html"
+                class="btn btn-primary fr"
+                id="startOperations"
+                >开始管理</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 特色功能介绍 -->
+      <section id="features" class="my-5 py-5">
+        <div class="w">
+          <h2 class="text-center mb-5">核心管理功能</h2>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="card bg-light shadow border-0 h-100">
+                <div class="card-body">
+                  <i class="bi bi-broadcast text-primary fs-1 mb-3"></i>
+                  <h6 class="card-title">信息发布</h6>
+                  <p class="card-text">
+                    轻松发布社区公告、活动信息，确保居民及时了解社区动态。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="card bg-light shadow border-0 h-100">
+                <div class="card-body">
+                  <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                  <h6 class="card-title">居民管理</h6>
+                  <p class="card-text">
+                    管理居民信息，审核新加入成员，构建和谐的社区环境。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="card bg-light shadow border-0 h-100">
+                <div class="card-body">
+                  <i
+                    class="bi bi-chat-left-dots-fill text-primary fs-1 mb-3"
+                  ></i>
+                  <h6 class="card-title">反馈收集</h6>
+                  <p class="card-text">
+                    收集并回应居民的建议和投诉，不断优化社区服务质量。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main content E -->
+
+    <!-- footer S -->
+    <footer id="page-footer">
+      <div id="footer-header">
+        <h2 style="color: #fff">资讯热线：400-111-1111</h2>
+        <p class="copy"><small>&copy;XXX版权所有</small></p>
+      </div>
+      <div class="w">
+        <div class="row" id="footer-content">
+          <dl>
+            <dt>核心功能</dt>
+            <dd><a href="#">管理</a></dd>
+            <dd><a href="#">运营</a></dd>
+            <dd><a href="#">资讯</a></dd>
+          </dl>
+          <dl>
+            <dt>核心功能</dt>
+            <dd><a href="#">管理</a></dd>
+            <dd><a href="#">运营</a></dd>
+            <dd><a href="#">资讯</a></dd>
+          </dl>
+          <dl>
+            <dt>核心功能</dt>
+            <dd><a href="#">管理</a></dd>
+            <dd><a href="#">运营</a></dd>
+            <dd><a href="#">资讯</a></dd>
+          </dl>
+          <dl>
+            <dt>核心功能</dt>
+            <dd><a href="#">管理</a></dd>
+            <dd><a href="#">运营</a></dd>
+            <dd><a href="#">资讯</a></dd>
+          </dl>
+          <dl>
+            <dt>核心功能</dt>
+            <dd><a href="#">管理</a></dd>
+            <dd><a href="#">运营</a></dd>
+            <dd><a href="#">资讯</a></dd>
+          </dl>
+        </div>
+        <ol class="other">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">使用条款</a></li>
+        </ol>
+      </div>
+    </footer>
+    <!-- footer E -->
+
+    <!-- backTop S -->
+    <a id="backTop" href="#top">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <!-- backTop E -->
+
+    <!-- script -->
+    <script src="../js/common.js"></script>
+  </body>
+</html>
